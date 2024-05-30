@@ -1,0 +1,53 @@
+* ::before ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    border: 1px black solid;
+    height: 90px;
+    border: 2px pink solid;
+    justify-content: space-between;
+  }
+
+  h1 {
+    margin-left: 20px;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  #parent-liens {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 20px;
+  }
+
+  .lien {
+    border: 2px pink solid;
+    border-radius: 5px;
+    text-decoration-line: none;
+    padding: 6px;
+    color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+  }
+
+  .lien:hover {
+    background-color: pink;
+  }
+  
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 84vh;
+    flex-direction: column;
+  }
+  
+  #image {
+    width: 300px;
+  }
