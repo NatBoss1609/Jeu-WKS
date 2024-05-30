@@ -51,3 +51,45 @@ header {
   #image {
     width: 300px;
   }
+
+  #formulaire {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-formulaire {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .input {
+    margin: 10px;
+    padding: 6px;
+    border: 2px pink solid;
+    border-radius: 5px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+  }
+
+  #parent-bouton {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .bouton {
+    border: 2px pink solid;
+    border-radius: 5px;
+    text-decoration-line: none;
+    padding: 6px;
+    color: black;
+    background-color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+  }
+  
+  .bouton:hover {
+    background-color: pink;
+  }
