@@ -15,6 +15,17 @@ const mots = [
     "url", "endpoint", "route", "middleware", "framework", "bibliothèque"
 ];
 
+// URLs des images du pendu
+const imagesPendu = [
+    "../img/etape1.png", // Image de départ (6 vies)
+    "../img/etape2.png", // Image après 1 vie perdue (5 vies)
+    "../img/etape3.png", // Image après 2 vies perdues (4 vies)
+    "../img/etape4.png", // Image après 3 vies perdues (3 vies)
+    "../img/etape5.png", // Image après 4 vies perdues (2 vies)
+    "../img/etape6.png", // Image après 5 vies perdues (1 vie)
+    "../img/etape7.png"  // Image après 6 vies perdues (0 vie)
+];
+
 // Fonction pour générer un mot aléatoire
 function genererMotAleatoire() {
     const indexAleatoire = Math.floor(Math.random() * mots.length);
@@ -40,6 +51,7 @@ function initialiserJeu() {
     afficherMot();
     afficherVies();
     genererClavier();
+    mettreAJourImagePendu();
 }
 
 // Fonction pour afficher le mot avec les lettres trouvées et les tirets
@@ -52,6 +64,12 @@ function afficherMot() {
 function afficherVies() {
     const viesElement = document.getElementById("vies");
     viesElement.innerText = "Vies restantes : " + vies;
+}
+
+// Fonction pour mettre à jour l'image du pendu
+function mettreAJourImagePendu() {
+    const imagePenduElement = document.getElementById("imagePendu");
+    imagePenduElement.src = imagesPendu[6 - vies];
 }
 
 // Fonction pour générer le clavier
@@ -91,6 +109,7 @@ function verifierLettre(lettre, bouton) {
     } else {
         vies--;
         afficherVies();
+        mettreAJourImagePendu();
         if (vies === 0) {
             alert("Vous avez perdu ! Le mot était : " + motPourJeuDePendu);
             initialiserJeu();

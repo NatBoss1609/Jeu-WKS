@@ -64,6 +64,38 @@ section {
 }
 
 
+/* IMAGES */
+
+#mot {
+  font-size: 24px;
+  margin-bottom: 20px;
+  letter-spacing: 10px;
+}
+#clavier button {
+  margin: 2px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+#clavier button:hover {
+  background-color: #45a049;
+}
+#clavier button.desactive {
+  visibility: hidden;
+}
+#vies {
+  font-size: 18px;
+  margin-top: 20px;
+}
+#pendu {
+  margin-top: 20px;
+}
+
 
 /* FORMULAIRE */
 
