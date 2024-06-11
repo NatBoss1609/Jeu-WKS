@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pendito - Connexion</title>
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body>
-    <header id="header">
-        <h1>Se connecter au jeu du pendu</h1>
-        <div id="parent-liens">
-            <a href="../../index.html" id="lien-aceuil" class="lien">Accueil</a>
-            <a href="inscription.html" id="lien-inscription" class="lien">Inscription</a>
-        </div>
-    </header>
+<?php
+
+    include_once "header.php";
+
+?>
+
     <main>
       <section id="section">
           <form id="formulaire" action="../php/login.php" method="POST">
@@ -32,8 +22,14 @@
           </form>
       </section>
     </main>
-    <footer>
-        
-    </footer>
+
+<?php
+
+
+
+?>
+
+    <script src="../js/script.js"></script>
+    <script src="https://kit.fontawesome.com/fd76b53e14.js" crossorigin="anonymous"></script>
 </body>
 </html>

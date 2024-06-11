@@ -13,12 +13,14 @@ body {
 
 /* ACCUEIL */
 header {
+  background-color: #1D75C7;
   display: flex;
-  align-items: center;
-  border: 1px black solid;
-  height: 90px;
-  border: 2px pink solid;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; 
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+  padding: 15px;
 }
 
 h1 {
