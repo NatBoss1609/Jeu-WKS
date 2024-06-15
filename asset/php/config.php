@@ -1,6 +1,6 @@
 <?php
 $host = '127.0.0.1';
-$db = 'exercice_pendu';
+$db = 'exercice_pendu_wks';
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';

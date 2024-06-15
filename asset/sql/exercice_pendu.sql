@@ -97,10 +97,6 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
 -- Déchargement des données de la table `utilisateurs`
 --
 
-INSERT INTO `utilisateurs` (`id_utilisateur`, `nom`, `prenom`, `email`, `mdp`, `photo`) VALUES
-(1, 'Borgugnons', 'Tamara', 'borgugnons1511@gmail.com', '$2y$10$CpR8FK2e8./CT9mK1Ni/TucDWbbfjBIim58ZOOKm.p.bzyktVRqkK', '../image/Plante1.jpg');
+INSERT INTO `utilisateurs` (`id_utilisateur`, `nom`, `prenom`, `email`, `mdp`) VALUES
+(1, 'Decraye', 'Nathan', 'nathan.decraye@apprenant.ifapme.be', '16Nathan@Decraye09');
 COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
