@@ -14,7 +14,7 @@
               </div>
               <div class="input-formulaire">
                   <label>Mot de passe</label>
-                  <input class="input" type="password" id="input-inscription-mdp" name="password" required />
+                  <input class="input" type="password" id="input-inscription-mdp" name="mdp" required />
                   <span id="span-inscription-mdp" style="display: none"></span>
               </div>
               <div class="input-formulaire">
