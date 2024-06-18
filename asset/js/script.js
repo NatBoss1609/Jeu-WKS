@@ -103,21 +103,26 @@ function verifierLettre(lettre, bouton) {
     if (lettresTrouvees.includes(true)) {
         afficherMot();
         if (!motCache.includes("_")) {
-            alert("Félicitations ! Vous avez trouvé le mot.");
-            initialiserJeu();
+            setTimeout(() => {
+                alert("Félicitations ! Vous avez trouvé le mot.");
+                initialiserJeu();
+            }, 500);
         }
     } else {
         vies--;
         afficherVies();
         mettreAJourImagePendu();
         if (vies === 0) {
-            alert("Vous avez perdu ! Le mot était : " + motPourJeuDePendu);
-            initialiserJeu();
+            setTimeout(() => {
+                alert("Vous avez perdu ! Le mot était : " + motPourJeuDePendu);
+                initialiserJeu();
+            }, 500);
         }
     }
 
-    // Désactiver le bouton
-    bouton.classList.add("desactive");
+    // Désactiver le bouton et ajouter la classe d'animation "slide-up"
+    bouton.disabled = true;
+    bouton.classList.add("slideUp");
 }
 
 // Initialiser le jeu lors du chargement de la page

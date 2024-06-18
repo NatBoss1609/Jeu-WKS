@@ -147,3 +147,19 @@ section {
   max-width: 100%;
   height: auto;
 }
+
+/* Animation de slide-up */
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+.slideUp {
+  animation: slideUp 0.5s forwards;
+}
